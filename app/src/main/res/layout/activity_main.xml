@@ -26,7 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/range_bar"
-        android:visibility="gone"
+        android:stepSize="1"
+        android:valueFrom="1"
+        android:valueTo="10"
+        app:values="@array/slider_values"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 

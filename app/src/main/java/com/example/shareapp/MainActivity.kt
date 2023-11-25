@@ -3,6 +3,7 @@ package com.example.shareapp
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
@@ -64,6 +65,7 @@ class MainActivity  : AppCompatActivity() {
             // Handle range changes
             val minValue = slider.values[0]
             val maxValue = slider.values[1]
+            progressBar.visibility = View.VISIBLE
             viewModel.fetchVenues(value.toString()+"mi")
         }
     }
